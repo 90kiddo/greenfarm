@@ -1,0 +1,799 @@
+:root {
+
+    /* color variables  */
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #EDEDED;
+    --greylight: #dcdbdb;
+    --light: #adacac;
+    --extralight: #ededed;
+    --purple: #1C1421;
+    --orange: #FF6C07;
+    --text-light: #676767;
+
+    /* typo varibale*/
+    --manrope: "Manrope", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--manrope);
+    background-color: #FFFFEA;
+}
+
+/* navbar starts from here */
+
+.nav-item a {
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.navbar img {
+    width: 70%;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 1050;
+    background-color: var(--white);
+}
+
+/* navbar ends here */
+
+/* hero starts from here */
+
+.hero {
+    background-image: url("./assets/hero.gif");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+}
+
+.hero-text {
+    padding: 150px 110px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    color: var(--white);
+    font-weight: 800;
+}
+
+.hero-text p {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 400;
+}
+
+.hero-text a {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 400;
+    text-decoration: none;
+    font-family: Reeys, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .hero-text {
+        padding: 120px 0px;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+        margin-top: 90px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-text a {
+        font-size: 24px;
+    }
+
+    .hero {
+        height: 78vh;
+    }
+}
+
+/* hero ends here */
+
+/* hero cards starts from here */
+
+.hero-cards h5 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero-cards .card {
+    border-radius: 0px;
+}
+
+.hero-cards .card-img-top {
+    border-radius: 0px;
+}
+
+.hero-cards {
+    margin-top: -50px;
+}
+
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: -50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-wrapper img {
+    width: 50px;
+    height: 50px;
+}
+
+.hero-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hero-cards .card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero-cards .card-title {
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media (max-width: 991px) {
+    .hero-cards h5 {
+        font-size: 16px;
+    }
+}
+
+/* hero card ends here */
+
+/* fresh starts from here */
+
+.fresh-arrows {
+    display: flex;
+    gap: 6px;
+    position: relative;
+    left: 90%;
+    margin-top: -24px;
+}
+
+.fresh-arrows button {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s;
+    color: yellow;
+}
+
+.fresh-arrows button:hover {
+    background: #eee;
+    color: black;
+}
+
+.fresh-slider .card {
+    margin: 0 10px;
+}
+
+.fresh {
+    background-image: url("./assets/fresh_bg.png");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    margin-top: 60px;
+}
+
+.text-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.text-content img {
+    width: 30px;
+    height: auto;
+}
+
+.text-content h2 {
+    font-size: 28px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.text-content h2 span a {
+    font-size: 16px;
+    color: #EECE38;
+    margin-left: 10px;
+}
+
+.fresh-slider .card {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.fresh-item {
+    padding: 0px 0px 0px 70px;
+}
+
+.fresh-slider {
+    margin-top: 20px;
+}
+
+.fresh-slider .slick-track {
+    left: 14%;
+}
+
+.video-thumbnail {
+    position: relative;
+    display: inline-block;
+}
+
+.video-thumbnail img {
+    border-radius: 12px;
+    display: block;
+    width: 100%;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.play-icon img {
+    width: 50px;
+    height: auto;
+}
+
+.video-duration {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+.fresh-slider .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .fresh-item {
+        padding: 0px 0px 0px 16px;
+    }
+
+    .text-content h2 {
+        font-size: 20px;
+    }
+
+    .text-content img {
+        width: 20px;
+        height: auto;
+    }
+
+    .fresh-arrows {
+        display: flex;
+        gap: 6px;
+        position: relative;
+        left: 76%;
+        margin-top: 10px;
+    }
+
+    .fresh-slider .slick-track {
+        left: 32%;
+    }
+
+    .fresh-slider .card-title {
+        font-size: 16px;
+    }
+}
+
+/* fresh ends here */
+
+/* farm section starts from here */
+
+.farming-section {
+    padding: 30px 0;
+    position: relative;
+}
+
+.farming-section h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.farming-section p {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.wheat-img {
+    position: absolute;
+    top: -14%;
+    left: -60px;
+    max-width: 154px;
+    z-index: 1;
+}
+
+.main-img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+}
+
+.sketch-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.watch-btn {
+    display: inline-block;
+    background-color: #3d2b00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+.watch-btn:hover {
+    background-color: #5a3d00;
+}
+
+.farming-section .play-farm {
+    max-width: 20px;
+    margin-right: 10px;
+}
+
+
+@media (max-width: 991px) {
+    .wheat-img {
+        max-width: 70px;
+        top: -43px;
+        left: 0px;
+    }
+
+    .sketch-img {
+        max-width: 260px;
+    }
+
+    .farming-section {
+        text-align: center;
+    }
+
+    .sketch-img {
+        position: relative;
+        display: block;
+        margin: 20px auto 0;
+    }
+
+    .farming-section h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .farming-section p {
+        font-size: 16px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+}
+
+/* farm section ends here */
+
+/* garden starts from here */
+
+.garden {
+    background-image: url("./assets/garden.png");
+}
+
+.garden-slider .card {
+    margin: 0 10px;
+}
+
+.garden-slider .card {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.garden-slider {
+    margin-top: 20px;
+}
+
+.garden-slider .slick-track {
+    left: 14%;
+}
+
+.garden-slider .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+    .garden {
+        margin-top: 0px;
+    }
+
+    .garden-slider .slick-track {
+        left: 32%;
+    }
+
+    .garden-slider .card-title {
+        font-size: 16px;
+    }
+}
+
+/* garden ends here */
+
+/* nourish starts from here */
+.nourish-section {
+    background-color: #fbf9e8;
+    padding: 50px 0px 0px;
+}
+
+.nourish-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.nourish-desc {
+    color: #555;
+    max-width: 520px;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+}
+
+
+.nourish-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nourish-top-row {
+    display: flex;
+    gap: 1rem;
+}
+
+.nourish-top-row img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+}
+
+.nourish-bottom-row img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.right-circle {
+    position: relative;
+    left: 10%;
+}
+
+.nourish-text-wrapper {
+    position: relative;
+}
+
+.nourish-bg-image {
+    position: absolute;
+    top: -20px;
+    left: -75px;
+    width: 150px;
+    z-index: 0;
+}
+
+.nourish-title,
+.nourish-desc {
+    position: relative;
+    z-index: 1;
+}
+
+.nourish-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nourish-desc {
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+
+
+@media (max-width: 991px) {
+    .nourish-top-row {
+        flex-direction: column;
+    }
+
+    .nourish-top-row img {
+        width: 100%;
+    }
+
+    .right-circle {
+        margin-top: 20px;
+        left: 0%;
+    }
+
+    .nourish-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .nourish-desc {
+        font-size: 16px;
+        text-align: center;
+    }
+}
+
+/* nourish ends here */
+
+/* plant starts from here */
+
+.plants {
+    background-image: url("./assets/plant.png");
+}
+
+.plants-slider .card {
+    margin: 0 10px;
+}
+
+.plants-slider .card {
+    flex: 0 0 auto;
+    width: 250px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.plants-slider {
+    margin-top: 20px;
+}
+
+.plants-slider .slick-track {
+    left: 14%;
+}
+
+.plants-slider .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+
+
+    .plants-slider .slick-track {
+        left: 32%;
+    }
+
+    .plants-slider .card-title {
+        font-size: 16px;
+    }
+}
+
+/* plant ends here */
+
+
+/* footer starts from here */
+
+.footer {
+    background-color: #321D01;
+    margin-top: 60px;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-item a {
+    color: white;
+    text-decoration: none;
+}
+
+.policy{
+    margin-right: 40px;
+}
+
+@media (max-width: 991px) {
+
+
+    .footer a{
+        font-size: 10px;
+    }
+
+    .policy{
+    margin-right: 10px;
+}
+}
+
+/* footer ends here */
+
+/* fresh hero starts from here */
+
+.fresh-hero{
+    margin-top: 110px;
+}
+
+.fresh-hero-item {
+    display: flex;
+    align-items: stretch;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.fresh-hero .hero-text {
+    background-color: #3b2200;
+    color: white;
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fresh-hero .hero-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.75rem;
+}
+
+.fresh-hero .hero-title h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.fresh-hero .icon {
+    width: 24px;
+    height: auto;
+}
+
+.fresh-hero .hero-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #ddd;
+}
+
+
+.fresh-hero .hero-image {
+    flex: 1;
+}
+
+.fresh-hero .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+  @media (max-width: 768px) {
+    .fresh-hero .fresh-hero-item {
+        flex-direction: column-reverse; /* text below image */
+    }
+
+    .fresh-hero .hero-text {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .fresh-hero .hero-title {
+        justify-content: center;
+    }
+
+    .fresh-hero .hero-title h1 {
+        font-size: 24px;
+    }
+
+    .fresh-hero .hero-text p {
+        font-size: 14px;
+    }
+
+    .fresh-hero .hero-image {
+        width: 100%;
+    }
+
+    .fresh-hero .hero-image img {
+        width: 100%;
+        height: 160px; 
+        object-fit: cover; 
+    }
+}
+
+
+
+
+.fresh-hero-cards{
+    margin-top: 60px;
+}
+
+.fresh-hero-cards .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.fresh-hero-cards .card img {
+    border-radius: 16px;
+}
+
+.fresh-hero-cards .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 991px) {
+
+.fresh-hero-cards .card-title {
+    font-size: 16px;
+}
+}
+
+/* fresh hero ends here */
+
+/* garden hero starts from here */
+
+/* garden hero ends here */
+
+/* plants hero starts from here */
+
+/* plants hero ends here */
